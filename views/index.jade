@@ -3,6 +3,7 @@ html
 body
     block content
     p Hello #{name}.
-    a(href="login") login
-    p
-    a(href="secret") secret
+    a(href="login") login with Humanode
+    - if (showmintbtn=='true')
+        p
+        button(type="button" onclick="alert('NFT MINTING CALL')") MINT NFT
